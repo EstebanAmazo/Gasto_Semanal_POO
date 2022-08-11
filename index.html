@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Gasto Semanal</title>
+
+  </head>
+  <body>
+    <div class="container">
+        <header>
+                <!-- <h1 class="text-center titulo">Control de gastos</h1> -->
+        </header>
+        <section class="contenido-principal"
+            <h2 class="text-center titulo-mbl">Control de gastos</h2>
+            <div class="row">
+                <div class="col ">
+                    <div class="contenido primario">
+                        <form id="agregar-gasto" action="#">
+                            <div class="form-group seccion-presupuesto campo">
+                                <label for="campo-presupuesto">Presupuesto</label>
+                                <input  class="form-control" id="campo-presupuesto" placeholder="Ingrese su presupuesto" type="number">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary boton presupuesto-btn">Agregar</button>
+                            <div class="form-group seccion-gastos campo">
+                                    <h2 class="text-left">Añade tus gastos aqui</h2>
+                                    <label for="gasto">Gasto:</label>
+                                    <input type="text" class="form-control cursor-not-alw" id="gasto" placeholder="Nombre Gasto">
+                                </div>
+                                <div class="form-group contenedor-cantidad campo">
+                                    <label for="cantidad">Cantidad:</label>
+                                    <input type="number" class="form-control cursor-not-alw" id="cantidad" placeholder="Cantidad en $">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary agregar-gasto-btn cursor-not-alw">Agregar</button>
+                            </form>
+
+                    </div> <!--.contenido-->
+                </div> <!--.col-->
+
+                <div class="col">
+                    <div class="contenido secundario">
+
+                        <h2 class="text-center lista">Listado</h2>
+
+                        <div id="gastos">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div id="presupuesto" class="presupuesto">
+                            <div class="alert alert-primary">
+                                <p>Presupuesto: $ <span id="total"></span> </p>
+                            </div>
+                            <div class="restante alert alert-success">
+                                <p>Restante: $ <span id="restante"></span></p>
+                            </div>
+                        </div> <!--.presupuesto-->
+                    </div> <!--.contenido-->
+                </div><!--.col-->
+            </div> <!--.row-->
+        </section>
+    </div>
+
+
+    <script src="js/app.js"></script>
+    <!-- <script src="js/guia.js"></script> -->
+
+   
+  </body>
+</html>
